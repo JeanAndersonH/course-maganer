@@ -11,6 +11,7 @@ import { CourseListComponent } from './courses/course-list.component';
   declarations: [                       /* todos os componentes devem ser declarados  */
     AppComponent,
     CourseListComponent
+    
   ],
   imports: [
     BrowserModule,
