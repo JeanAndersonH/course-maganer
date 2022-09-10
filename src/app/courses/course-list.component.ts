@@ -25,7 +25,8 @@ export class CourseListComponent implements OnInit{
                     rating: 5.4,
                     releaseDate: 'December, 2, 2019'
                 
-            },{
+            },
+            {
                 id: 2,
                 name: 'Angular: Http',
                 imageUrl:'',
