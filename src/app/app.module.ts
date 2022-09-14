@@ -6,11 +6,13 @@ import { FormsModule } from '@angular/forms'; /* importou pacote do formas modul
 
 import { AppComponent } from './app.component';
 import { CourseListComponent } from './courses/course-list.component';
+import { StarComponent } from './star/stat.component';
 
 @NgModule({
   declarations: [                       /* todos os componentes devem ser declarados  */
     AppComponent,
-    CourseListComponent
+    CourseListComponent,
+    StarComponent
     
   ],
   imports: [
