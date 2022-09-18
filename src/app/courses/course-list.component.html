@@ -4,7 +4,7 @@
 <div class="form-group row">
 
   <label class="col-sm-2 col-form-label">Filter By</label>
-  
+
   <div class="col-sm-th">
     <input [(ngModel)]="filter" class="form-control">
   </div>
@@ -35,8 +35,10 @@
             <td>
                 <app-star [rating]="course.rating"></app-star>    <!-- atributo la do input que foi criado no stat.component.ts-->
             </td>
-            <td></td>
-            
+            <td>
+              <a [routerLink]="['/courses/Info', course.id]" class="btn btn-primary">edit</a>
+            </td>
+
     </tbody>
 
 </table>

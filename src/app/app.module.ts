@@ -1,3 +1,5 @@
+
+import { CourseInfoComponent } from './courses/course-info.component';
 import { Error404Component } from './error-404/error-404.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -17,24 +19,32 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     StarComponent,
     ReplacePipe,                    // pipe declarado, não um componente mas serve para alterar exibição e fazer alterações text
     NavBarComponent,
-    Error404Component
-    
+    Error404Component,
+    CourseInfoComponent,
+
+
   ],
   imports: [
     BrowserModule,
     FormsModule,                        /*importando modulo do angular */
     RouterModule.forRoot([
       {
-        path: '', redirectTo: 'courses',pathMatch:'full'      //raiz do projeto
-      },
-      {
         path: 'courses', component: CourseListComponent
       },
       {
-        path: '**', component: Error404Component 
+        path: 'courses/Info/:id', component: CourseInfoComponent
+      },
+      {
+        path: '', redirectTo: 'courses',pathMatch:'full'      //raiz do projeto
+      },
+
+      {
+        path: '**', component: Error404Component
       }
     ])
+
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
